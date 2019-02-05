@@ -10,12 +10,6 @@
 			}
 		</style>
 	</head>
-    
-    
-    
-    
-    
-    
 	<body>
 		
 		<script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
@@ -42,7 +36,10 @@
 				
 				// paste your code from the geometryGUI here
 
-
+				geometry = new THREE.CubeGeometry(200, 200, 200);
+				material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
+				mesh = new THREE.Mesh(geometry, material);
+				scene.add(mesh);
 			}
 
 			function draw() {
