@@ -39,6 +39,13 @@
 
 				scene = new THREE.Scene();
 				
+				geometry = new THREE.TorusGeometry(100, 40, 40, 40, 6.28);
+				material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading, side: THREE.BackSide});
+				mesh = new THREE.Mesh(geometry, material);
+				mesh.scale.x = mesh.scale.y = mesh.scale.z = 1.15;
+				mesh.position.y = 57.35;
+				mesh.rotation.x = 2.12;
+				scene.add(mesh);
 				
 				// paste your code from the geometryGUI here
 
