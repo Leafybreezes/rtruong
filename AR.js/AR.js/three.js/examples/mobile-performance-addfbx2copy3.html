@@ -275,8 +275,8 @@
 
              } );
 
- //					object.position.y = - 95;
- //					scene.add( object );
+				object.position.y = - 95;
+				scene.add( object );
              object.scale.set(.02, .02, .02);
              arWorldRoot.add( object );
 
@@ -305,7 +305,7 @@
                     .setMaterials( materials )
                     .setPath( '../../data/data/' )
                     .load( 'pokeball.obj', function ( object ) {
-                        object.scale.set(.4, .4, .4);
+                        object.scale.set(2, 2, 2);
                         arWorldRoot.add( object );
                     }, onProgress, onError );
             } );
@@ -362,4 +362,3 @@
 			}
     
 </script></body>
-
